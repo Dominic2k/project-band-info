@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="icon" type="image/x-icon" href="./assets/img/icon.png">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
@@ -18,7 +19,8 @@
             <li><a href="#tour">Tour</a></li>
             <li><a href="#contact">Contact</a></li>
             <li>
-                <a href="">More
+                <a href="#">
+                    More
                     <i class="nav-arrow-down ti-arrow-circle-down"></i>
                 </a>
                 <ul class="subnav">
@@ -28,9 +30,13 @@
                 </ul>
             </li>
         </ul>
+        <div id="mobile-menu" class="mobile-menu-btn">
+            <i class="menu-icon ti-menu"></i>
+        </div>
         <div class="search-btn">
             <i class="search-icon ti-search"></i>
         </div>
+
     </div>
     <div id="slider">
         <div class="text-content">
@@ -46,15 +52,15 @@
                 The Big Bang event is a physical theory that describes how the universe expanded from an initial state of high density and temperature.[1] Various cosmological models of the Big Bang explain the evolution of the observable universe from the earliest known periods through its subsequent large-scale form.[2][3][4] These models offer a comprehensive explanation for a broad range of observed phenomena, including the abundance of light elements, the cosmic microwave background (CMB) radiation, and large-scale structure. The overall uniformity of the Universe, known as the flatness problem, is explained through cosmic inflation: a sudden and very rapid expansion of space during the earliest moments. However, physics currently lacks a widely accepted theory of quantum gravity that can successfully model the earliest conditions of the Big Bang.
             </p>
             <div class="row member-list">
-                <div class="col col-third text-center">
+                <div class="col col-third s-col-full mt-32 text-center">
                     <p class="member-name">Name1</p>
                     <img src="./assets/img/content3.jpg" alt="" class="member-img">
                 </div>
-                <div class="col col-third text-center">
+                <div class="col col-third s-col-full mt-32 text-center">
                     <p class="member-name">Name2</p>
                     <img src="./assets/img/content3.jpg" alt="" class="member-img">
                 </div>
-                <div class="col col-third text-center">
+                <div class="col col-third s-col-full mt-32 text-center">
                     <p class="member-name">Name3</p>
                     <img src="./assets/img/content3.jpg" alt="" class="member-img">
                 </div>
@@ -78,31 +84,31 @@
                     </li>
                 </ul>
                 <div class="row places-list">
-                    <div class="col col-third">
+                    <div class="col col-third mt-16 s-col-full" >
                         <img src="./assets/img/caurong.jpg" class="place-img"></img>
                         <div class="place-body">
                             <h3 class="place-heading">Da Nang</h3>
                             <p class="place-time">Fri 27 Nov 2023</p>
                             <p class="place-desc">The big bang is how astronomers explain the way the universe began</p>
-                            <a href="#" class="place-buy-btn">Buy Now</a>
+                            <a href="#" class="place-buy-btn s-full-width">Buy Now</a>
                         </div>
                     </div>
-                    <div class="col col-third">
+                    <div class="col col-third mt-16 s-col-full" >
                         <img src="./assets/img/caurong.jpg" class="place-img"></img>
                         <div class="place-body">
                             <h3 class="place-heading">Da Nang</h3>
                             <p class="place-time">Fri 27 Nov 2023</p>
                             <p class="place-desc">The big bang is how astronomers explain the way the universe began</p>
-                            <a href="#" class="place-buy-btn">Buy Now</a>
+                            <a href="#" class="place-buy-btn s-full-width">Buy Now</a>
                         </div>
                     </div>
-                    <div class="col col-third">
+                    <div class="col col-third mt-16 s-col-full" >
                         <img src="./assets/img/caurong.jpg" class="place-img"></img>
                         <div class="place-body">
                             <h3 class="place-heading">Da Nang</h3>
                             <p class="place-time">Fri 27 Nov 2023</p>
                             <p class="place-desc">The big bang is how astronomers explain the way the universe began</p>
-                            <a href="#" class="place-buy-btn">Buy Now</a>
+                            <a href="#" class="place-buy-btn s-full-width">Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -113,18 +119,18 @@
             <p class="section-sub-heading">Fan? Drop a notes!</p>
 
             <div class="row contact-content">
-                <div class="col col-half contact-info">
+                <div class="col col-half s-col-full contact-info">
                     <p><i class="ti-location-pin"></i>Da Nang, VN</p>
                     <p><i class="ti-mobile"></i>Phone: +00 151515</p>
                     <p><i class="ti-email"></i>Email: mai@gmail.com</p>
                 </div>
-                <div class="col col-half contact-form">
+                <div class="col col-half s-col-full contact-form">
                     <form action="">
                         <div class="row">
-                            <div class="col col-half">
+                            <div class="col col-half s-col-full">
                                 <input type="text" placeholder="Name" required name="" id="" class="form-control">
                             </div>
-                            <div class="col col-half">
+                            <div class="col col-half s-col-full s-mt-8">
                                 <input type="email" placeholder="Email" required name="" id="" class="form-control">
                             </div>
                         </div>
@@ -133,7 +139,7 @@
                                 <input type="text" placeholder="Message" required name="" id="" class="form-control">
                             </div>
                         </div>
-                        <input class="form-submit-btn mt-16" type="submit" value="SEND">
+                        <input class="form-submit-btn mt-16 s-full-width" type="submit" value="SEND">
                     </form>
                 </div>
             </div>
@@ -187,6 +193,38 @@
     
     </div>
 </div>
+
+<script>
+    var header = document.getElementById ('header');
+    var mobileMenu = document.getElementById ('mobile-menu');
+    var headerHeight = header.clientHeight;
+    //Đóng mở mobile menu
+    mobileMenu.onclick = function() {
+        var isClosed = header.clientHeight === headerHeight;
+        if (isClosed) {
+            header.style.height = 'auto';
+        } else {
+            header.style.height = null;
+        }
+    }
+
+    // Đóng mở tự động menu khi chọn
+
+    var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+    for (var i = 0; i < menuItems.length; i++) {
+        var menuItem = menuItems[i];
+        
+        menuItem.onclick = function(event) {
+            var isParentMenu = this.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnav');
+            if (isParentMenu) {
+                event.preventDefault();
+            } else {
+                header.style.height = null;
+            }
+        }
+    }
+
+</script>
 
 </body>
 </html>
